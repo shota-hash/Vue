@@ -65,7 +65,7 @@
       });
   </script>
   <div id="bpp">
-    <input type="text" v-model="keyword">
+    <input type="text" v-model="keyword" class="wrapper">
     <table>
       <tr v-for="user in filteredUsers" :key="user.id">
         <td>{{user.name}}</td>
@@ -79,7 +79,7 @@
           keyword: '',
           users: [
             {
-              id= 1,
+              id: 1,
               name: '佐藤'
             },
             {
@@ -166,6 +166,10 @@
       width: 500px;
       text-align: center;
       padding: 50px;
+    }
+    .wrapper {
+      border: 3px solid rgb(115, 190, 2);
+      border-radius: 3px;
     }
   </style>
 </body>
